@@ -4,13 +4,13 @@ fun main() {
     }
 
     fun part1(input: List<String>): Int {
-        val all = input.map { i -> i.toInt() }
+        val all = input.map { it.toInt() }
         return countIncreases(all)
     }
 
     fun part2(input: List<String>): Int {
-        val all = input.map { i -> i.toInt() }
-        val windowSums = all.windowed(3).map{ (a, b, c) -> a + b + c }
+        val all = input.map { it.toInt() }
+        val windowSums = all.windowed(3).map{ it.sum() }
         return countIncreases(windowSums)
     }
 
