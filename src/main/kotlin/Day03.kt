@@ -39,8 +39,6 @@ fun main() {
     }
 
     fun part2(input: List<String>): Int {
-
-
         val ox = getByBitCriteria(input, true)
         val co2 = getByBitCriteria(input, false)
 
